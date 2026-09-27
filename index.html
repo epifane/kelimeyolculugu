@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Kelime Yolculuğu</title>
+<link rel="manifest" href="manifest.json">
+<link rel="icon" href="icons/icon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;700;800&family=Nunito:wght@500;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<section id="anamenu" class="screen active">
+  <span class="skor-rozet">⭐ <span id="toplam-skor">0</span></span>
+  <h1>Kelime Yolculuğu</h1>
+  <p>Bir kategori seç, yolculuğa başla!</p>
+  <div class="kategori-liste" id="kategori-liste"></div>
+</section>
+
+<section id="harita" class="screen">
+  <svg class="manzara" id="manzara-svg" viewBox="0 0 400 800" preserveAspectRatio="xMidYMax slice"></svg>
+  <div class="harita-basit">
+    <button class="geri-btn" onclick="anaMenuyeDon()">←</button>
+    <h2 class="harita-baslik" id="harita-baslik"></h2>
+  </div>
+  <div class="yol-alani"><div class="duraklar" id="duraklar"></div></div>
+</section>
+
+<section id="bulmaca" class="screen">
+  <div class="bulmaca-ust">
+    <button class="geri-btn" onclick="haritayaDon()">←</button>
+    <div class="puan-goster">⭐ <span id="bulmaca-skor">0</span></div>
+  </div>
+  <div class="diger-kelimeler" id="diger-kelimeler"></div>
+  <div class="ipucu-kutu">
+    <span class="ipucu-emoji" id="aktif-emoji">🐱</span>
+    <span class="ipucu-metin" id="aktif-ipucu">İpucu</span>
+    <button class="ipucu-btn" onclick="ipucuGoster()">İpucu (-15)</button>
+  </div>
+  <div class="grid-sarma"><div class="grid" id="grid"></div></div>
+  <div class="klavye" id="klavye"></div>
+</section>
+
+<section id="tamam" class="screen">
+  <div class="buyuk-emoji">🎉</div>
+  <h2>Harika iş!</h2>
+  <p id="tamam-detay"></p>
+  <button class="devam-btn" onclick="tamamdanDevam()">Devam Et</button>
+</section>
+
+<script src="app.js"></script>
+</body>
+</html>

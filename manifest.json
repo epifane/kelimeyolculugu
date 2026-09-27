@@ -1,0 +1,11 @@
+{
+  "name": "Kelime Yolculuğu",
+  "short_name": "Kelime Yolculuğu",
+  "start_url": ".",
+  "display": "standalone",
+  "background_color": "#EAF6FF",
+  "theme_color": "#118AB2",
+  "icons": [
+    { "src": "icons/icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any maskable" }
+  ]
+}

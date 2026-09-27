@@ -1,0 +1,34 @@
+[
+  {
+    "id": "hayvanlar", "ad": "Hayvanlar", "emoji": "🐾", "renk": ["#BEE3C0", "#7BC67E"],
+    "duraklar": [
+      { "kelimeler": [
+        {"kelime":"KEDİ", "ipucu":"Miyavlayan ev hayvanı", "tip":"tanim", "emoji":"🐱", "yon":"h", "r":0, "c":0},
+        {"kelime":"İNEK", "ipucu":"Süt veren çiftlik hayvanı", "tip":"tanim", "emoji":"🐄", "yon":"v", "r":0, "c":3}
+      ]},
+      { "kelimeler": [
+        {"kelime":"ARI", "ipucu":"Bal yapan uçan böcek", "tip":"tanim", "emoji":"🐝", "yon":"h", "r":0, "c":0},
+        {"kelime":"KUŞ", "ipucu":"Uçabilen, tüylü hayvan", "tip":"tanim", "emoji":"🐦", "yon":"h", "r":2, "c":0},
+        {"kelime":"BALIK", "ipucu":"Suda solungaçla yaşayan hayvan", "tip":"tanim", "emoji":"🐟", "yon":"h", "r":4, "c":0}
+      ]},
+      { "kelimeler": [
+        {"kelime":"KOYUN", "ipucu":"Yününden kazak yapılan hayvan", "tip":"tanim", "emoji":"🐑", "yon":"v", "r":0, "c":3},
+        {"kelime":"TAVUK", "ipucu":"Yumurtlayan çiftlik kuşu", "tip":"tanim", "emoji":"🐔", "yon":"h", "r":3, "c":0},
+        {"kelime":"AT", "ipucu":"Üzerine binilen hızlı hayvan", "tip":"tanim", "emoji":"🐴", "yon":"h", "r":6, "c":0}
+      ]}
+    ]
+  },
+  {
+    "id": "meyve_sebze", "ad": "Meyve & Sebze", "emoji": "🍎", "renk": ["#FFE3C2", "#FFB84D"],
+    "duraklar": [
+      { "kelimeler": [
+        {"kelime":"ELMA", "ipucu":"Kırmızı ya da yeşil olabilen meyve", "tip":"tanim", "emoji":"🍎", "yon":"h", "r":0, "c":0},
+        {"kelime":"ARMUT", "ipucu":"Elmaya benzer, aşağısı geniş meyve", "tip":"tanim", "emoji":"🍐", "yon":"v", "r":0, "c":3}
+      ]},
+      { "kelimeler": [
+        {"kelime":"ÜZÜM", "ipucu":"Salkım halinde yetişen küçük meyve", "tip":"tanim", "emoji":"🍇", "yon":"h", "r":0, "c":0},
+        {"kelime":"ÇİLEK", "ipucu":"Kırmızı, üzeri noktalı küçük meyve", "tip":"tanim", "emoji":"🍓", "yon":"h", "r":2, "c":0}
+      ]}
+    ]
+  }
+]
