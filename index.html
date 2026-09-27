@@ -13,42 +13,85 @@
 </head>
 <body>
 
+<!-- ANA MENÜ -->
 <section id="anamenu" class="screen active">
-  <span class="skor-rozet">⭐ <span id="toplam-skor">0</span></span>
+  <div class="skor-rozet">
+    <span class="rozet-ikon">⭐</span>
+    <span id="toplam-skor">0</span>
+  </div>
+  
+  <!-- Ana Menü Maskot Alanı -->
+  <div class="menu-maskot-kutu">
+    <div class="maskot-balon">Merhaba! Yeni kelimeler keşfetmeye hazır mısın? 🚀</div>
+    <div class="maskot-avatar">🦊</div>
+  </div>
+
   <h1>Kelime Yolculuğu</h1>
-  <p>Bir kategori seç, yolculuğa başla!</p>
+  <p>Bir macera seç ve oyuna başla!</p>
   <div class="kategori-liste" id="kategori-liste"></div>
 </section>
 
+<!-- HARİTA EKRANI -->
 <section id="harita" class="screen">
   <svg class="manzara" id="manzara-svg" viewBox="0 0 400 800" preserveAspectRatio="xMidYMax slice"></svg>
   <div class="harita-basit">
-    <button class="geri-btn" onclick="anaMenuyeDon()">←</button>
+    <button class="geri-btn" onclick="anaMenuyeDon()" aria-label="Geri">←</button>
     <h2 class="harita-baslik" id="harita-baslik"></h2>
   </div>
-  <div class="yol-alani"><div class="duraklar" id="duraklar"></div></div>
+  <div class="yol-alani">
+    <div class="duraklar" id="duraklar"></div>
+  </div>
 </section>
 
+<!-- BULMACA / OYUN EKRANI -->
 <section id="bulmaca" class="screen">
+  <!-- Üst Bilgi Barı -->
   <div class="bulmaca-ust">
-    <button class="geri-btn" onclick="haritayaDon()">←</button>
+    <button class="geri-btn" onclick="haritayaDon()" aria-label="Geri">←</button>
+    
+    <!-- İlerleme Çubuğu -->
+    <div class="ilerleme-kutusu">
+      <div class="ilerleme-cubugu">
+        <div class="ilerleme-dolgu" id="ilerleme-dolgu"></div>
+      </div>
+      <span class="ilerleme-metin" id="ilerleme-metin">0/0</span>
+    </div>
+
     <div class="puan-goster">⭐ <span id="bulmaca-skor">0</span></div>
   </div>
+
+  <!-- Diğer Kelimelerin İkon Listesi -->
   <div class="diger-kelimeler" id="diger-kelimeler"></div>
+
+  <!-- Maskot ve Konuşma Balonu (Oyun İçi Rehber) -->
+  <div class="oyun-maskot-kutu">
+    <div class="maskot-avatar-kucuk">🦊</div>
+    <div class="maskot-konusma" id="maskot-mesaj">İpucuna bakarak doğru harfleri bulalım!</div>
+  </div>
+
+  <!-- İpucu Kutusu -->
   <div class="ipucu-kutu">
     <span class="ipucu-emoji" id="aktif-emoji">🐱</span>
     <span class="ipucu-metin" id="aktif-ipucu">İpucu</span>
-    <button class="ipucu-btn" onclick="ipucuGoster()">İpucu (-15)</button>
+    <button class="ipucu-btn" onclick="ipucuGoster()">💡 İpucu Al (-15)</button>
   </div>
-  <div class="grid-sarma"><div class="grid" id="grid"></div></div>
+
+  <!-- Bulmaca Izgarası (Grid) -->
+  <div class="grid-sarma">
+    <div class="grid" id="grid"></div>
+  </div>
+
+  <!-- Ekran Klavyesi -->
   <div class="klavye" id="klavye"></div>
 </section>
 
+<!-- TEBRİKLER EKRANI -->
 <section id="tamam" class="screen">
   <div class="buyuk-emoji">🎉</div>
-  <h2>Harika iş!</h2>
+  <div class="maskot-avatar">🦊</div>
+  <h2>Harika İş Çıkardın!</h2>
   <p id="tamam-detay"></p>
-  <button class="devam-btn" onclick="tamamdanDevam()">Devam Et</button>
+  <button class="devam-btn" onclick="tamamdanDevam()">Sonraki Durağa Git 🚀</button>
 </section>
 
 <script src="app.js"></script>
