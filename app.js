@@ -30,11 +30,32 @@ function anaMenuyeDon(){ anaMenuOlustur(); goster("anamenu"); }
 /* ---- Harita ---- */
 function manzaraCiz(kat){
   const [a,b] = kat.renk;
+  let agaclar = "";
+  for(let i=0;i<6;i++){
+    const x = 20 + i*70 + (i%2?15:-10), y = 690 + (i%3)*32, boy = 34 + (i%2)*10;
+    agaclar += `<g transform="translate(${x},${y})">
+      <rect x="-3" y="0" width="6" height="${boy*0.4}" fill="#8a5a3b"/>
+      <circle cx="0" cy="-${boy*0.35}" r="${boy*0.5}" fill="${b}"/>
+    </g>`;
+  }
   document.getElementById("manzara-svg").innerHTML = `
-    <rect width="400" height="800" fill="none"/>
-    <path d="M0,800 L0,650 Q100,600 200,650 T400,650 L400,800 Z" fill="${a}"/>
-    <path d="M0,800 L0,730 Q120,690 220,730 T400,720 L400,800 Z" fill="${b}"/>
-    <circle cx="330" cy="90" r="34" fill="var(--sun)"/>`;
+    <defs>
+      <linearGradient id="gokyuzu" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0" stop-color="#CFEBFF"/><stop offset="1" stop-color="#EAF6FF"/>
+      </linearGradient>
+    </defs>
+    <rect width="400" height="800" fill="url(#gokyuzu)"/>
+    <circle cx="320" cy="90" r="58" fill="var(--sun)" opacity=".25"/>
+    <circle cx="320" cy="90" r="36" fill="var(--sun)"/>
+    <g opacity=".85">
+      <ellipse cx="80" cy="120" rx="38" ry="14" fill="#fff"/>
+      <ellipse cx="106" cy="112" rx="26" ry="12" fill="#fff"/>
+      <ellipse cx="250" cy="175" rx="30" ry="11" fill="#fff"/>
+    </g>
+    <path d="M0,800 L0,620 Q100,570 200,620 T400,610 L400,800 Z" fill="${a}" opacity=".55"/>
+    <path d="M0,800 L0,700 Q120,650 220,700 T400,690 L400,800 Z" fill="${a}"/>
+    <path d="M0,800 L0,760 Q140,720 220,760 T400,750 L400,800 Z" fill="${b}"/>
+    ${agaclar}`;
 }
 function kategoriyeGir(id){ state.kategoriId = id; goster("harita"); haritaOlustur(); }
 function haritaOlustur(){
@@ -61,18 +82,27 @@ function haritaOlustur(){
 
   kat.duraklar.forEach((d,i)=>{
     const acik = i <= kayit[kat.id].acikDurak;
+    const oncuDurak = i===kayit[kat.id].acikDurak;
     const btn = document.createElement("button");
-    btn.className = "durak" + (acik?"":" kilitli") + (i===kayit[kat.id].acikDurak?" aktif":"");
-    btn.textContent = i+1;
+    btn.className = "durak" + (acik?"":" kilitli") + (oncuDurak?" aktif":"");
+    btn.textContent = acik ? (i+1) : "🔒";
     btn.style.left = noktalar[i].xYuzde + "%";
     btn.style.top = noktalar[i].y + "px";
     const yildizSayisi = kayit[kat.id].yildizlar[i];
     if(yildizSayisi){ const s=document.createElement("span"); s.className="yildiz"; s.textContent="⭐".repeat(yildizSayisi); btn.appendChild(s); }
     if(acik) btn.onclick = ()=> durakaGir(i);
     wrap.appendChild(btn);
+    if(oncuDurak){
+      const bayrak = document.createElement("span");
+      bayrak.className = "durak-bayrak";
+      bayrak.textContent = "🚩";
+      bayrak.style.left = noktalar[i].xYuzde + "%";
+      bayrak.style.top = noktalar[i].y + "px";
+      wrap.appendChild(bayrak);
+    }
   });
 
-  // duraklar arasında kıvrılan patika çizgisi (açık olan kısım yeşil, kilitli kısım soluk)
+  // duraklar arasında kıvrılan toprak patika (açılan kısım ayak izi gibi vurgulanır)
   const genislik = wrap.clientWidth;
   let tumYol = "", acikYol = "";
   noktalar.forEach((n,i)=>{
@@ -81,9 +111,9 @@ function haritaOlustur(){
     if(i <= kayit[kat.id].acikDurak) acikYol += (i===0 ? "M":"L") + px + "," + n.y + " ";
   });
   svg.innerHTML = `
-    <path d="${tumYol}" fill="none" stroke="#ffffffb0" stroke-width="10" stroke-linecap="round"/>
-    <path d="${tumYol}" fill="none" stroke="var(--lock)" stroke-width="6" stroke-dasharray="2 12" stroke-linecap="round"/>
-    <path d="${acikYol}" fill="none" stroke="var(--grass)" stroke-width="6" stroke-dasharray="2 12" stroke-linecap="round"/>
+    <path d="${tumYol}" fill="none" stroke="var(--yol-kenar)" stroke-width="16" stroke-linecap="round"/>
+    <path d="${tumYol}" fill="none" stroke="var(--yol)" stroke-width="11" stroke-linecap="round"/>
+    <path d="${acikYol}" fill="none" stroke="var(--grass)" stroke-width="4" stroke-dasharray="1 13" stroke-linecap="round" opacity=".9"/>
   `;
 }
 function haritayaDon(){ goster("harita"); haritaOlustur(); }
