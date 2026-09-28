@@ -1,34 +1,1512 @@
 [
-  {
-    "id": "hayvanlar", "ad": "Hayvanlar", "emoji": "🐾", "renk": ["#BEE3C0", "#7BC67E"],
-    "duraklar": [
-      { "kelimeler": [
-        {"kelime":"KEDİ", "ipucu":"Miyavlayan ev hayvanı", "tip":"tanim", "emoji":"🐱", "yon":"h", "r":0, "c":0},
-        {"kelime":"İNEK", "ipucu":"Süt veren çiftlik hayvanı", "tip":"tanim", "emoji":"🐄", "yon":"v", "r":0, "c":3}
-      ]},
-      { "kelimeler": [
-        {"kelime":"ARI", "ipucu":"Bal yapan uçan böcek", "tip":"tanim", "emoji":"🐝", "yon":"h", "r":0, "c":0},
-        {"kelime":"KUŞ", "ipucu":"Uçabilen, tüylü hayvan", "tip":"tanim", "emoji":"🐦", "yon":"h", "r":2, "c":0},
-        {"kelime":"BALIK", "ipucu":"Suda solungaçla yaşayan hayvan", "tip":"tanim", "emoji":"🐟", "yon":"h", "r":4, "c":0}
-      ]},
-      { "kelimeler": [
-        {"kelime":"KOYUN", "ipucu":"Yününden kazak yapılan hayvan", "tip":"tanim", "emoji":"🐑", "yon":"v", "r":0, "c":3},
-        {"kelime":"TAVUK", "ipucu":"Yumurtlayan çiftlik kuşu", "tip":"tanim", "emoji":"🐔", "yon":"h", "r":3, "c":0},
-        {"kelime":"AT", "ipucu":"Üzerine binilen hızlı hayvan", "tip":"tanim", "emoji":"🐴", "yon":"h", "r":6, "c":0}
-      ]}
-    ]
-  },
-  {
-    "id": "meyve_sebze", "ad": "Meyve & Sebze", "emoji": "🍎", "renk": ["#FFE3C2", "#FFB84D"],
-    "duraklar": [
-      { "kelimeler": [
-        {"kelime":"ELMA", "ipucu":"Kırmızı ya da yeşil olabilen meyve", "tip":"tanim", "emoji":"🍎", "yon":"h", "r":0, "c":0},
-        {"kelime":"ARMUT", "ipucu":"Elmaya benzer, aşağısı geniş meyve", "tip":"tanim", "emoji":"🍐", "yon":"v", "r":0, "c":3}
-      ]},
-      { "kelimeler": [
-        {"kelime":"ÜZÜM", "ipucu":"Salkım halinde yetişen küçük meyve", "tip":"tanim", "emoji":"🍇", "yon":"h", "r":0, "c":0},
-        {"kelime":"ÇİLEK", "ipucu":"Kırmızı, üzeri noktalı küçük meyve", "tip":"tanim", "emoji":"🍓", "yon":"h", "r":2, "c":0}
-      ]}
-    ]
-  }
+ {
+  "id": "seviye1",
+  "no": 1,
+  "ad": "Minik Keşifler",
+  "alt": "Somut & Basit",
+  "emoji": "🌱",
+  "renk": [
+   "#BEE3C0",
+   "#7BC67E"
+  ],
+  "kelimeler": [
+   {
+    "kelime": "KEDİ",
+    "ipucu": "Miyav diyen sevimli evcil hayvan",
+    "tip": "tanim"
+   },
+   {
+    "kelime": "KALEM",
+    "ipucu": "Yazı yazmamıza ve resim çizmemize yarayan araç",
+    "tip": "tanim"
+   },
+   {
+    "kelime": "ELMA",
+    "ipucu": "Kırmızı veya yeşil renkli, sulu tatlı meyve",
+    "tip": "tanim"
+   },
+   {
+    "kelime": "OKUL",
+    "ipucu": "Ders gördüğümüz, öğretmenimiz ve arkadaşlarımızın olduğu yer",
+    "tip": "tanim"
+   },
+   {
+    "kelime": "MASA",
+    "ipucu": "Üzerinde ders çalıştığımız veya yemek yediğimiz mobilya",
+    "tip": "tanim"
+   },
+   {
+    "kelime": "EV",
+    "ipucu": "Ailemizle birlikte yaşadığımız yuva",
+    "tip": "tanim"
+   },
+   {
+    "kelime": "KİTAP",
+    "ipucu": "Bilgi öğrenmek için okuduğumuz sayfalı araç",
+    "tip": "tanim"
+   },
+   {
+    "kelime": "NOKTA",
+    "ipucu": "Cümlelerin sonuna koyduğumuz nokta işareti",
+    "tip": "tanim"
+   },
+   {
+    "kelime": "GÜNEŞ",
+    "ipucu": "Gökyüzünde gündüzleri ısı ve ışık veren sarı yıldız",
+    "tip": "tanim"
+   },
+   {
+    "kelime": "BARDAK",
+    "ipucu": "İçine su, meyve suyu koyup içtiğimiz kap",
+    "tip": "tanim"
+   },
+   {
+    "kelime": "KUŞ",
+    "ipucu": "Havada uçan, kanatları ve gagası olan hayvan",
+    "tip": "tanim"
+   },
+   {
+    "kelime": "ŞEMSİYE",
+    "ipucu": "Yağmur yağdığında ıslanmamak için açtığımız eşya",
+    "tip": "tanim"
+   },
+   {
+    "kelime": "AYAKKABI",
+    "ipucu": "Ayaklarımıza giydiğimiz bağcıklı veya cırtcırtlı giysi",
+    "tip": "tanim"
+   },
+   {
+    "kelime": "YILDIZ",
+    "ipucu": "Gece gökyüzünde parıldayan gök cisimlerinden her biri",
+    "tip": "tanim"
+   },
+   {
+    "kelime": "KÖPEK",
+    "ipucu": "Sadık dostumuz, hav hav diye ses çıkaran hayvan",
+    "tip": "tanim"
+   },
+   {
+    "kelime": "ÇİÇEK",
+    "ipucu": "Bahçede veya saksıda yetişen, güzel kokulu bitki",
+    "tip": "tanim"
+   },
+   {
+    "kelime": "GÖKKUŞAĞI",
+    "ipucu": "Farklı renkleri olan, gökyüzünde kemer gibi çıkan renkli dairesel kuşak",
+    "tip": "tanim"
+   },
+   {
+    "kelime": "SALINCAK",
+    "ipucu": "Parkta üzerine oturup sallandığımız eğlenceli araç",
+    "tip": "tanim"
+   },
+   {
+    "kelime": "İNEK",
+    "ipucu": "Süt veren, otla beslenen büyükbaş hayvan",
+    "tip": "tanim"
+   },
+   {
+    "kelime": "ÖĞRETMEN",
+    "ipucu": "Bize ders öğreten, rehberlik eden kişi",
+    "tip": "tanim"
+   },
+   {
+    "kelime": "SABUN",
+    "ipucu": "Temizlenmek için ellerimizi yıkadığımız köpüren madde",
+    "tip": "tanim"
+   },
+   {
+    "kelime": "AY",
+    "ipucu": "Gece gökyüzünde aydınlatma yapan uydumuz",
+    "tip": "tanim"
+   },
+   {
+    "kelime": "GEMİ",
+    "ipucu": "Denizde yüzen, yolcu ve yük taşıyan büyük taşıt",
+    "tip": "tanim"
+   },
+   {
+    "kelime": "BULUT",
+    "ipucu": "Gökyüzünde beyaz pamuk gibi süzülen su buharı",
+    "tip": "tanim"
+   },
+   {
+    "kelime": "TENEFFÜS",
+    "ipucu": "Okulda ders aralarında dinlendiğimiz ve oynadığımız süre",
+    "tip": "tanim"
+   },
+   {
+    "kelime": "MONT",
+    "ipucu": "Bizi soğuktan koruyan, kalın kışlık giysi",
+    "tip": "tanim"
+   },
+   {
+    "kelime": "SIRA",
+    "ipucu": "Okulda iki kişinin yan yana oturup ders çalıştığı mobilya",
+    "tip": "tanim"
+   },
+   {
+    "kelime": "SAAT",
+    "ipucu": "Duvara asılan ve zamanı gösteren araç",
+    "tip": "tanim"
+   },
+   {
+    "kelime": "PASTA",
+    "ipucu": "Doğum günlerinde üzerine mum dikilen tatlı gıda",
+    "tip": "tanim"
+   },
+   {
+    "kelime": "SİLGİ",
+    "ipucu": "Yazı yazarken hataları silmek için kullandığımız araç",
+    "tip": "tanim"
+   }
+  ]
+ },
+ {
+  "id": "seviye2",
+  "no": 2,
+  "ad": "Doğa ve Eşyalar",
+  "alt": "Somut İsimler",
+  "emoji": "🌳",
+  "renk": [
+   "#C9E7B0",
+   "#8CCB5E"
+  ],
+  "kelimeler": [
+   {
+    "kelime": "AĞAÇ",
+    "ipucu": "Yaprakları olan, gövdesi odunsu büyük bitki",
+    "tip": "tanim"
+   },
+   {
+    "kelime": "KELEBEK",
+    "ipucu": "Renkli kanatlarıyla uçan sevimli böcek",
+    "tip": "tanim"
+   },
+   {
+    "kelime": "BALIK",
+    "ipucu": "Suda yüzen, solungaçlarıyla nefes alan canlı",
+    "tip": "tanim"
+   },
+   {
+    "kelime": "OKULÇANTASI",
+    "ipucu": "Her gün okula götürdüğümüz, defter ve kalem koyduğumuz çanta",
+    "tip": "tanim"
+   },
+   {
+    "kelime": "HAVUÇ",
+    "ipucu": "Toprakta yetişen, turuncu renkli ve tavşanların çok sevdiği sebze",
+    "tip": "tanim"
+   },
+   {
+    "kelime": "UÇAK",
+    "ipucu": "Havada uçan ve yolcu taşıyan kanatlı büyük taşıt",
+    "tip": "tanim"
+   },
+   {
+    "kelime": "ARI",
+    "ipucu": "Bize lezzetli ballar yapan çalışkan böcek",
+    "tip": "tanim"
+   },
+   {
+    "kelime": "DONDURMA",
+    "ipucu": "Sıcak günlerde serinlemek için yediğimiz soğuk ve tatlı gıda",
+    "tip": "tanim"
+   },
+   {
+    "kelime": "YASTIK",
+    "ipucu": "Gece yatarken başımızın altına koyduğumuz yumuşak eşya",
+    "tip": "tanim"
+   },
+   {
+    "kelime": "LİMON",
+    "ipucu": "Sarı renkli, ekşi meyve",
+    "tip": "tanim"
+   },
+   {
+    "kelime": "KARDANADAM",
+    "ipucu": "Kar yağdığında kartopundan yaptığımız havuç burunlu figür",
+    "tip": "tanim"
+   },
+   {
+    "kelime": "TARAK",
+    "ipucu": "Saçlarımızı düzeltmek ve taramak için kullandığımız araç",
+    "tip": "tanim"
+   },
+   {
+    "kelime": "ÇORAP",
+    "ipucu": "Ayaklarımıza giydiğimiz yumuşak giysi",
+    "tip": "tanim"
+   },
+   {
+    "kelime": "TENCERE",
+    "ipucu": "İçinde yemek pişirdiğimiz kulplu mutfak eşyası",
+    "tip": "tanim"
+   },
+   {
+    "kelime": "ŞAPKA",
+    "ipucu": "Yazın başımızı güneşten korumak için taktığımız aksesuar",
+    "tip": "tanim"
+   },
+   {
+    "kelime": "ARABA",
+    "ipucu": "Büyüdüğümüzde kullanacağımız dört tekerlekli motorlu taşıt",
+    "tip": "tanim"
+   },
+   {
+    "kelime": "KAŞIK",
+    "ipucu": "Yemeğimizi yerken çorba içmek için kullandığımız metal araç",
+    "tip": "tanim"
+   },
+   {
+    "kelime": "MAKAS",
+    "ipucu": "Resim dersinde kâğıtları kesmek için kullandığımız araç",
+    "tip": "tanim"
+   },
+   {
+    "kelime": "PENCERE",
+    "ipucu": "Evin içine ışık ve hava girmesini sağlayan camlı bölüm",
+    "tip": "tanim"
+   },
+   {
+    "kelime": "ATKI",
+    "ipucu": "Kışın boynumuza sardığımız sıcak tutan yünlü kumaş",
+    "tip": "tanim"
+   },
+   {
+    "kelime": "CETVEL",
+    "ipucu": "Çizim yaparken düz çizgiler çekmemizi sağlayan ölçü aracı",
+    "tip": "tanim"
+   },
+   {
+    "kelime": "ASLAN",
+    "ipucu": "Ormanların kralı olarak bilinen yeleli büyük kedi türü",
+    "tip": "tanim"
+   },
+   {
+    "kelime": "AYI",
+    "ipucu": "Ormanda yaşayan, balı çok seven sevimli ayı türü",
+    "tip": "tanim"
+   },
+   {
+    "kelime": "ZARF",
+    "ipucu": "İçine mektup koyup postaladığımız kâğıt kılıf",
+    "tip": "tanim"
+   },
+   {
+    "kelime": "KAPI",
+    "ipucu": "Binalara girmemizi sağlayan, kilitlenebilir bölüm",
+    "tip": "tanim"
+   },
+   {
+    "kelime": "DİŞMACUNU",
+    "ipucu": "Dişlerimizi fırçalarken kullandığımız temizleyici macun",
+    "tip": "tanim"
+   },
+   {
+    "kelime": "LAMBA",
+    "ipucu": "Gece odamızı aydınlatan elektrikli gereç",
+    "tip": "tanim"
+   },
+   {
+    "kelime": "DÜNYA",
+    "ipucu": "Üzerinde yaşadığımız mavi gezegen",
+    "tip": "tanim"
+   },
+   {
+    "kelime": "TEREYAĞI",
+    "ipucu": "Ekmeğin üzerine sürerek yediğimiz, sütten yapılan sarı gıda",
+    "tip": "tanim"
+   },
+   {
+    "kelime": "YAĞMUR",
+    "ipucu": "Yağmurlu günlerde bulutlardan düşen su damlaları",
+    "tip": "tanim"
+   }
+  ]
+ },
+ {
+  "id": "seviye3",
+  "no": 3,
+  "ad": "Çevre ve Eylemler",
+  "alt": "Basit Fiiller & Kavramlar",
+  "emoji": "🏃",
+  "renk": [
+   "#FFE3B3",
+   "#FFB347"
+  ],
+  "kelimeler": [
+   {
+    "kelime": "OKUMAK",
+    "ipucu": "Kütüphaneden aldığımız bir kitabı gözlerimizle inceleyip anlama işi",
+    "tip": "tanim"
+   },
+   {
+    "kelime": "YAZMAK",
+    "ipucu": "Kalemle kâğıda duygu ve düşüncelerimizi aktarma eylemi",
+    "tip": "tanim"
+   },
+   {
+    "kelime": "KOŞMAK",
+    "ipucu": "Bacaklarımızı hızlıca hareket ettirerek bir yere yetişme eylemi",
+    "tip": "tanim"
+   },
+   {
+    "kelime": "OYNAMAK",
+    "ipucu": "Arkadaşlarımızla vakit geçirip eğlendiğimiz etkinlik",
+    "tip": "tanim"
+   },
+   {
+    "kelime": "UYUMAK",
+    "ipucu": "Gece yatağımıza yatıp dinlenme ve rüya görme durumu",
+    "tip": "tanim"
+   },
+   {
+    "kelime": "DANSETMEK",
+    "ipucu": "Müzik eşliğinde ritmik hareketler yapma eylemi",
+    "tip": "tanim"
+   },
+   {
+    "kelime": "YEMEK",
+    "ipucu": "Yemeğimizi çiğneyip yutma eylemi",
+    "tip": "tanim"
+   },
+   {
+    "kelime": "ÇALIŞMAK",
+    "ipucu": "Bir konuyu öğrenmek için zihnimizi çalıştırma işi",
+    "tip": "tanim"
+   },
+   {
+    "kelime": "DİNLEMEK",
+    "ipucu": "Kulaklarımızla sesleri ve müzikleri algılama işi",
+    "tip": "tanim"
+   },
+   {
+    "kelime": "KAZANMAK",
+    "ipucu": "Bir oyunu veya yarışı birincilikle bitirme durumu",
+    "tip": "tanim"
+   },
+   {
+    "kelime": "RESİMYAPMAK",
+    "ipucu": "Boya kalemleriyle kâğıda görseller çizme işi",
+    "tip": "tanim"
+   },
+   {
+    "kelime": "GÜLMEK",
+    "ipucu": "Ağzımızla neşeli sesler çıkararak sevinç gösterme",
+    "tip": "tanim"
+   },
+   {
+    "kelime": "YÜRÜMEK",
+    "ipucu": "Bir yere ulaşmak için adım atarak ilerleme",
+    "tip": "tanim"
+   },
+   {
+    "kelime": "YÜZMEK",
+    "ipucu": "Suyun içinde kollarımızı ve bacaklarımızı oynatarak ilerleme",
+    "tip": "tanim"
+   },
+   {
+    "kelime": "YARDIMETMEK",
+    "ipucu": "İhtiyacı olan birine karşılıksız destek olma eylemi",
+    "tip": "tanim"
+   },
+   {
+    "kelime": "SEVİNÇ",
+    "ipucu": "Bir hediye aldığımızda hissettiğimiz neşeli duygu",
+    "tip": "tanim"
+   },
+   {
+    "kelime": "ARKADAŞLIK",
+    "ipucu": "İki veya daha fazla kişinin birbiriyle kurduğu iyi ilişki",
+    "tip": "tanim"
+   },
+   {
+    "kelime": "AİLE",
+    "ipucu": "Birlikte yaşadığımız anne, baba ve kardeşlerden oluşan topluluk",
+    "tip": "tanim"
+   },
+   {
+    "kelime": "TEMİZLİK",
+    "ipucu": "Yaşadığımız sokağın, okulun ve çevrenin çöp olmama durumu",
+    "tip": "tanim"
+   },
+   {
+    "kelime": "SELAM",
+    "ipucu": "Karşılaştığımız insanlara verdiğimiz \"Merhaba\" veya \"Günaydın\" dileği",
+    "tip": "tanim"
+   },
+   {
+    "kelime": "ÖZÜR",
+    "ipucu": "Bir hata yaptığımızda karşımızdakinden dilediğimiz bağışlanma isteği",
+    "tip": "tanim"
+   },
+   {
+    "kelime": "TEŞEKKÜR",
+    "ipucu": "İyilik gördüğümüzde karşımızdaki kişiye söylediğimiz kibar söz",
+    "tip": "tanim"
+   },
+   {
+    "kelime": "NEZAKET",
+    "ipucu": "Başkalarının eşyalarını kullanmak için izin isteme kibarlığı",
+    "tip": "tanim"
+   },
+   {
+    "kelime": "PAYLAŞMAK",
+    "ipucu": "Verdiklerimizi veya bildiklerimizi başkalarıyla bir arada kullanma",
+    "tip": "tanim"
+   },
+   {
+    "kelime": "İŞBİRLİĞİ",
+    "ipucu": "Bir işte birlikte hareket ederek çaba gösterme",
+    "tip": "tanim"
+   },
+   {
+    "kelime": "SAYGI",
+    "ipucu": "Bir canlıya veya büyüğümüze karşı özenli ve kibar davranma",
+    "tip": "tanim"
+   },
+   {
+    "kelime": "SEVGİ",
+    "ipucu": "Birine karşı içimizde hissettiğimiz derin bağlılık ve sıcaklık",
+    "tip": "tanim"
+   },
+   {
+    "kelime": "SORUMLULUK",
+    "ipucu": "Bir görevi zamanında ve eksiksiz yapma bilinci",
+    "tip": "tanim"
+   },
+   {
+    "kelime": "AZİM",
+    "ipucu": "Zorluklar karşısında yılmadan çaba göstermeye devam etme",
+    "tip": "tanim"
+   },
+   {
+    "kelime": "SINIF",
+    "ipucu": "Okulda derslerimizi öğrendiğimiz oda",
+    "tip": "tanim"
+   }
+  ]
+ },
+ {
+  "id": "seviye4",
+  "no": 4,
+  "ad": "Duygular ve Tanımlar",
+  "alt": "Genişleyen Kelimeler",
+  "emoji": "💛",
+  "renk": [
+   "#FFD6E0",
+   "#FF8FA9"
+  ],
+  "kelimeler": [
+   {
+    "kelime": "KORKU",
+    "ipucu": "Korkunç bir olay karşısında içimizde oluşan his",
+    "tip": "tanim"
+   },
+   {
+    "kelime": "ADALET",
+    "ipucu": "Hak haksızlık ayrımında herkese eşit davranma ilkesi",
+    "tip": "tanim"
+   },
+   {
+    "kelime": "DÜRÜSTLÜK",
+    "ipucu": "Bir durumun doğrusunu söyleme, yalan konuşmama erdemi",
+    "tip": "tanim"
+   },
+   {
+    "kelime": "GÜVEN",
+    "ipucu": "Birine verdiğimiz söze bağlı kalma ve ona güven duyma",
+    "tip": "tanim"
+   },
+   {
+    "kelime": "HAYAL",
+    "ipucu": "Zihnimizde canlandırdığımız istekler ve düşler",
+    "tip": "tanim"
+   },
+   {
+    "kelime": "MERAK",
+    "ipucu": "Yeni şeyler öğrenmeye ve keşfetmeye karşı duyulan güçlü istek",
+    "tip": "tanim"
+   },
+   {
+    "kelime": "SÜRPRİZ",
+    "ipucu": "Beklenmedik güzel bir olayla karşılaşınca yaşanan şaşkınlık",
+    "tip": "tanim"
+   },
+   {
+    "kelime": "CESARET",
+    "ipucu": "Zor işleri başarmak için içimizde bulduğumuz cesur güç",
+    "tip": "tanim"
+   },
+   {
+    "kelime": "KARARLILIK",
+    "ipucu": "Bir işte kararlı olma, pes etmeme durumu",
+    "tip": "tanim"
+   },
+   {
+    "kelime": "MERHAMET",
+    "ipucu": "Doğadaki tüm canlılara karşı duyulan acıma ve koruma hissi",
+    "tip": "tanim"
+   },
+   {
+    "kelime": "HOŞGÖRÜ",
+    "ipucu": "Başkalarının düşüncelerine ve yaşamına karşı anlayışlı olma",
+    "tip": "tanim"
+   },
+   {
+    "kelime": "BAŞARI",
+    "ipucu": "Yaptığımız bir çalışmanın sonucunda elde ettiğimiz olumlu derece",
+    "tip": "tanim"
+   },
+   {
+    "kelime": "ÖZGÜRLÜK",
+    "ipucu": "İçimizde hiçbir baskı olmadan kendi kararlarımızı verebilme durumu",
+    "tip": "tanim"
+   },
+   {
+    "kelime": "SABIR",
+    "ipucu": "Zor zamanlarda sabırlı olup beklemesini bilme gücü",
+    "tip": "tanim"
+   },
+   {
+    "kelime": "DOSTLUK",
+    "ipucu": "Arkadaşlar arasında hiçbir çıkar gözetmeksizin kurulan bağ",
+    "tip": "tanim"
+   },
+   {
+    "kelime": "ANLAYIŞ",
+    "ipucu": "Bir konuyu derinlemesine inceleyip kavrama yeteneği",
+    "tip": "tanim"
+   },
+   {
+    "kelime": "DİSİPLİN",
+    "ipucu": "Sınıfta veya toplumda uymamız gereken düzen kuralları",
+    "tip": "tanim"
+   },
+   {
+    "kelime": "EMPATİ",
+    "ipucu": "Bir olay karşısında kendimizi başkasının yerine koyabilme yeteneği",
+    "tip": "tanim"
+   },
+   {
+    "kelime": "YARATICILIK",
+    "ipucu": "Sanatçıların veya bilim insanlarının yeni bir şey ortaya koyması",
+    "tip": "tanim"
+   },
+   {
+    "kelime": "ÖZGÜVEN",
+    "ipucu": "Kendi yeteneklerimize ve gücümüze olan inancımız",
+    "tip": "tanim"
+   },
+   {
+    "kelime": "SIR",
+    "ipucu": "Arkadaşlarımıza verdiğimiz ve tutmamız gereken gizli bilgi",
+    "tip": "tanim"
+   },
+   {
+    "kelime": "ÇEVRECİLİK",
+    "ipucu": "Doğayı ve canlıları korumak için gösterdiğimiz özen",
+    "tip": "tanim"
+   },
+   {
+    "kelime": "ODAKLANMA",
+    "ipucu": "Bir işi yaparken tüm dikkatimizi o işe verme durumu",
+    "tip": "tanim"
+   },
+   {
+    "kelime": "SÖZÜNDEDURMAK",
+    "ipucu": "Kendimize veya başkalarına verdiğimiz sözü yerine getirme",
+    "tip": "tanim"
+   },
+   {
+    "kelime": "MÜTEVAZILIK",
+    "ipucu": "Gururlu ve kibirli olmama, alçakgönüllü davranma erdemi",
+    "tip": "tanim"
+   },
+   {
+    "kelime": "YURTSEVERLİK",
+    "ipucu": "Vatanını ve milletini çok sevme duygusu",
+    "tip": "tanim"
+   },
+   {
+    "kelime": "SAKİNLİK",
+    "ipucu": "Bir tehlike anında panik yapmadan sakin kalabilme",
+    "tip": "tanim"
+   },
+   {
+    "kelime": "HAFIZA",
+    "ipucu": "Yaşadığımız güzel anıları zihnimizde saklama gücü",
+    "tip": "tanim"
+   }
+  ]
+ },
+ {
+  "id": "seviye5",
+  "no": 5,
+  "ad": "Bilim, Doğa ve Evren",
+  "alt": "Gözlem & Mantık",
+  "emoji": "🔭",
+  "renk": [
+   "#BFD9FF",
+   "#6FA3FF"
+  ],
+  "kelimeler": [
+   {
+    "kelime": "KAR",
+    "ipucu": "Atmosferdeki su buharının soğuk hava ile karşılaşıp donarak beyaz taneler halinde yağması",
+    "tip": "tanim"
+   },
+   {
+    "kelime": "RÜZGAR",
+    "ipucu": "Havanın yer değiştirmesiyle oluşan serinletici veya şiddetli rüzgâr",
+    "tip": "tanim"
+   },
+   {
+    "kelime": "FIRTINA",
+    "ipucu": "Şiddetli rüzgâr ve yağmurun bir arada olduğu doğa olayı",
+    "tip": "tanim"
+   },
+   {
+    "kelime": "DEPREM",
+    "ipucu": "Yer kabuğundaki ani sarsıntı ile oluşan doğa olayı",
+    "tip": "tanim"
+   },
+   {
+    "kelime": "GÖKGÜRÜLTÜSÜ",
+    "ipucu": "Yıldırımların çakmasıyla gökyüzünde oluşan yüksek ses",
+    "tip": "tanim"
+   },
+   {
+    "kelime": "ATMOSFER",
+    "ipucu": "Çevremizi saran, nefes almamızı sağlayan gaz tabakası",
+    "tip": "tanim"
+   },
+   {
+    "kelime": "SU",
+    "ipucu": "Canlıların yaşaması için şart olan, renksiz ve kokusuz sıvı",
+    "tip": "tanim"
+   },
+   {
+    "kelime": "TOPRAK",
+    "ipucu": "Bitkilerin kökleriyle tutunduğu, besin aldığı yer kabuğu tabakası",
+    "tip": "tanim"
+   },
+   {
+    "kelime": "KÖRFEZ",
+    "ipucu": "Denizin kara parçasına doğru yaptığı büyük su birikintisi",
+    "tip": "tanim"
+   },
+   {
+    "kelime": "ADA",
+    "ipucu": "Etrafı sularla çevrili olan kara parçası",
+    "tip": "tanim"
+   },
+   {
+    "kelime": "DAĞ",
+    "ipucu": "Yeryüzündeki en yüksek, dağlık ve kayalık alanlar",
+    "tip": "tanim"
+   },
+   {
+    "kelime": "VADİ",
+    "ipucu": "Dağların arasında kalan çukur ve düzlük alanlar",
+    "tip": "tanim"
+   },
+   {
+    "kelime": "NEHİR",
+    "ipucu": "Dağlardan doğup denizlere doğru akan büyük su yolu",
+    "tip": "tanim"
+   },
+   {
+    "kelime": "GÖL",
+    "ipucu": "Karadaki büyük çukurlarda biriken tatlı veya tuzlu durgun su",
+    "tip": "tanim"
+   },
+   {
+    "kelime": "OKYANUS",
+    "ipucu": "Dünya üzerindeki çok büyük tuzlu su kütleleri",
+    "tip": "tanim"
+   },
+   {
+    "kelime": "TERMOMETRE",
+    "ipucu": "Isının derecesini ölçmek için kullandığımız araç",
+    "tip": "tanim"
+   },
+   {
+    "kelime": "MİKROSKOP",
+    "ipucu": "Cisimleri büyüterek mikroskobik canlıları görmemizi sağlayan bilimsel araç",
+    "tip": "tanim"
+   },
+   {
+    "kelime": "TELESKOP",
+    "ipucu": "Uzaktaki yıldızları ve gezegenleri incelemeye yarayan dev dürbün",
+    "tip": "tanim"
+   },
+   {
+    "kelime": "BİLİMİNSANI",
+    "ipucu": "Yerçekimini keşfeden veya bilimsel buluşlar yapan kişi",
+    "tip": "tanim"
+   },
+   {
+    "kelime": "ARAŞTIRMA",
+    "ipucu": "Bir problemin çözümü için yapılan sistemli deney ve inceleme",
+    "tip": "tanim"
+   },
+   {
+    "kelime": "ASTRONOT",
+    "ipucu": "Uzaya giden, roket kullanan eğitimli kişi",
+    "tip": "tanim"
+   },
+   {
+    "kelime": "UZAY",
+    "ipucu": "Dünya'mızın etrafındaki sonsuz karanlık ve yıldızlarla dolu boşluk",
+    "tip": "tanim"
+   },
+   {
+    "kelime": "PUSULA",
+    "ipucu": "Mıknatısın kuzeyi gösteren ibreli yön bulma aracı",
+    "tip": "tanim"
+   },
+   {
+    "kelime": "ORMAN",
+    "ipucu": "İçinde binlerce bitki ve hayvan türünü barındıran sık ağaçlı alan",
+    "tip": "tanim"
+   },
+   {
+    "kelime": "İKLİM",
+    "ipucu": "Mevsimlerin değişmesiyle havanın ısınma veya soğuma durumu",
+    "tip": "tanim"
+   }
+  ]
+ },
+ {
+  "id": "seviye6",
+  "no": 6,
+  "ad": "Kültür, Sanat ve İletişim",
+  "alt": "Soyuta Geçiş",
+  "emoji": "🎨",
+  "renk": [
+   "#E3CCFF",
+   "#B48CFF"
+  ],
+  "kelimeler": [
+   {
+    "kelime": "MÜZİK",
+    "ipucu": "Duygu ve düşünceleri seslerle ifade etme sanatı",
+    "tip": "tanim"
+   },
+   {
+    "kelime": "RESİM",
+    "ipucu": "Fırça ve boyalarla tuval üzerine yapılan görsel sanat",
+    "tip": "tanim"
+   },
+   {
+    "kelime": "OYUN",
+    "ipucu": "Tiyatro sahnesinde oyuncuların canlandırdığı eser",
+    "tip": "tanim"
+   },
+   {
+    "kelime": "HEYKEL",
+    "ipucu": "Taş, çamur veya mermerden yapılan üç boyutlu eser",
+    "tip": "tanim"
+   },
+   {
+    "kelime": "ŞİİR",
+    "ipucu": "Duyguların dizeler halinde estetik sözlerle anlatılması",
+    "tip": "tanim"
+   },
+   {
+    "kelime": "ŞAİR",
+    "ipucu": "Şiir yazan usta yazar",
+    "tip": "tanim"
+   },
+   {
+    "kelime": "YAZAR",
+    "ipucu": "Bir olayı veya hikâyeyi kitap haline getiren kişi",
+    "tip": "tanim"
+   },
+   {
+    "kelime": "DİL",
+    "ipucu": "İnsanların birbiriyle anlaşmasını sağlayan kelimeler bütünü",
+    "tip": "tanim"
+   },
+   {
+    "kelime": "TARİH",
+    "ipucu": "Geçmişte yaşanmış olayları ve uygarlıkları inceleyen bilim",
+    "tip": "tanim"
+   },
+   {
+    "kelime": "KÜLTÜR",
+    "ipucu": "Bir toplumun geçmişten günümüze taşıdığı alışkanlık ve değerler",
+    "tip": "tanim"
+   },
+   {
+    "kelime": "KÜTÜPHANE",
+    "ipucu": "Bilgi edinmek için gittiğimiz, sessizce kitap okunan yer",
+    "tip": "tanim"
+   },
+   {
+    "kelime": "MÜZE",
+    "ipucu": "Tarihi eserlerin ve sanat ürünlerinin sergilendiği bina",
+    "tip": "tanim"
+   },
+   {
+    "kelime": "FİLM",
+    "ipucu": "Sinemada veya televizyonda izlediğimiz hareketli görüntüler",
+    "tip": "tanim"
+   },
+   {
+    "kelime": "GAZETE",
+    "ipucu": "Günlük haberleri ve bilgileri basılı olarak sunan kâğıt yayın",
+    "tip": "tanim"
+   },
+   {
+    "kelime": "RADYO",
+    "ipucu": "Bilgileri kablosuz dalgalarla evimize ulaştıran sesli cihaz",
+    "tip": "tanim"
+   },
+   {
+    "kelime": "MİMİK",
+    "ipucu": "Duygularımızı yüz ifademizle karşımızdakine aktarma",
+    "tip": "tanim"
+   },
+   {
+    "kelime": "JEST",
+    "ipucu": "Konuşurken ellerimizi ve kollarımızı hareket ettirme biçimi",
+    "tip": "tanim"
+   },
+   {
+    "kelime": "GÖRGÜ",
+    "ipucu": "Toplum içinde uyulması gereken yazısız nezaket kuralları",
+    "tip": "tanim"
+   },
+   {
+    "kelime": "GELENEK",
+    "ipucu": "Özel günlerde ve bayramlarda sevdiklerimizi ziyaret etme geleneği",
+    "tip": "tanim"
+   },
+   {
+    "kelime": "MÜNAZARA",
+    "ipucu": "Bir fikri savunmak için yapılan seviyeli tartışma",
+    "tip": "tanim"
+   },
+   {
+    "kelime": "HİTABET",
+    "ipucu": "Topluluk önünde yapılan etkili ve heyecanlı konuşma",
+    "tip": "tanim"
+   },
+   {
+    "kelime": "SANAT",
+    "ipucu": "Resim, müzik veya edebiyat gibi yaratıcı alanların genel adı",
+    "tip": "tanim"
+   },
+   {
+    "kelime": "SEYİRCİ",
+    "ipucu": "Sanat eserlerini hayranlıkla izleyen veya dinleyen kişi",
+    "tip": "tanim"
+   },
+   {
+    "kelime": "ENSTRÜMAN",
+    "ipucu": "Piyano, gitar ve keman gibi müzik çalmaya yarayan aletlerin genel adı",
+    "tip": "tanim"
+   },
+   {
+    "kelime": "BAYRAK",
+    "ipucu": "Bir milletin bağımsızlığını simgeleyen, direğe çekilen kumaş",
+    "tip": "tanim"
+   },
+   {
+    "kelime": "MİLLET",
+    "ipucu": "Ortak değerlere sahip, aynı ülkede yaşayan insan topluluğu",
+    "tip": "tanim"
+   },
+   {
+    "kelime": "HAK",
+    "ipucu": "Devletin vatandaşlarına tanıdığı seçme, yaşama gibi yetkiler",
+    "tip": "tanim"
+   },
+   {
+    "kelime": "KANUN",
+    "ipucu": "Birlikte yaşamak için konulan ve herkesin uyması gereken kurallar",
+    "tip": "tanim"
+   },
+   {
+    "kelime": "BARIŞ",
+    "ipucu": "Farklı ülkelerin birbiriyle barış içinde yaşaması durumu",
+    "tip": "tanim"
+   },
+   {
+    "kelime": "İLETİŞİM",
+    "ipucu": "İnsanlar arasındaki duygu ve bilgi alışverişi",
+    "tip": "tanim"
+   }
+  ]
+ },
+ {
+  "id": "seviye7",
+  "no": 7,
+  "ad": "Soyut Kavramlar ve Erdemler",
+  "alt": "Erdemlere Yolculuk",
+  "emoji": "🕊️",
+  "renk": [
+   "#C7F0F0",
+   "#5CCFCF"
+  ],
+  "kelimeler": [
+   {
+    "kelime": "İSTEK",
+    "ipucu": "Bir şeyi yapma isteği veya hedefe ulaşma arzusu",
+    "tip": "tanim"
+   },
+   {
+    "kelime": "HUZUR",
+    "ipucu": "İçsel olarak hissettiğimiz huzur ve dinginlik hali",
+    "tip": "tanim"
+   },
+   {
+    "kelime": "FELSEFE",
+    "ipucu": "Hayatın anlamını ve amacını sorgulayan düşünce sistemi",
+    "tip": "tanim"
+   },
+   {
+    "kelime": "İRADE",
+    "ipucu": "Güçlü bir iradeye sahip olup nefse veya isteklere hakim olma",
+    "tip": "tanim"
+   },
+   {
+    "kelime": "SEZGİ",
+    "ipucu": "Bir olayı gerçekleşmeden önce hissetme yeteneği",
+    "tip": "tanim"
+   },
+   {
+    "kelime": "İYİMSERLİK",
+    "ipucu": "Her şeye olumlu tarafından bakma, iyi olacağına inanma",
+    "tip": "tanim"
+   },
+   {
+    "kelime": "UMUT",
+    "ipucu": "Geleceğe dair umudunu kaybetmeme, güzel günler bekleme",
+    "tip": "tanim"
+   },
+   {
+    "kelime": "PİŞMANLIK",
+    "ipucu": "Yaptığımız yanlış bir şey yüzünden içimizde duyduğumuz üzüntü",
+    "tip": "tanim"
+   },
+   {
+    "kelime": "ERDEM",
+    "ipucu": "Bir insanın sahip olduğu ahlaki güzellikler ve nitelikler",
+    "tip": "tanim"
+   },
+   {
+    "kelime": "İYİLİK",
+    "ipucu": "Kötülük yapmaktan kaçınma, herkese faydalı olmaya çalışma",
+    "tip": "tanim"
+   },
+   {
+    "kelime": "EŞİTLİK",
+    "ipucu": "İnsanları din, dil, ırk ayırmadan eşit görme anlayışı",
+    "tip": "tanim"
+   },
+   {
+    "kelime": "ŞÜKRAN",
+    "ipucu": "Birine karşı duyulan minnet ve memnuniyet hissi",
+    "tip": "tanim"
+   },
+   {
+    "kelime": "KANAAT",
+    "ipucu": "Sahip olduklarımızla yetinebilme, açgözlü olmama durumu",
+    "tip": "tanim"
+   },
+   {
+    "kelime": "DAYANIKLI",
+    "ipucu": "Bir zorlukla karşılaştığında pes etmeyen, dayanıklı olan kişi",
+    "tip": "tanim"
+   },
+   {
+    "kelime": "BAĞIMSIZLIK",
+    "ipucu": "Bir ülkenin kendi kendini yönetme özgürlüğü",
+    "tip": "tanim"
+   },
+   {
+    "kelime": "NEŞE",
+    "ipucu": "Kalpte hissettiğimiz coşkulu sevinç ve mutluluk",
+    "tip": "tanim"
+   },
+   {
+    "kelime": "HAKKANİYET",
+    "ipucu": "Haklıya hakkını verme, haksızlığı engelleme ilkesi",
+    "tip": "tanim"
+   },
+   {
+    "kelime": "OLGUNLUK",
+    "ipucu": "Yaşanan bir olay karşısında gösterilen olgun anlayış",
+    "tip": "tanim"
+   },
+   {
+    "kelime": "ZEKA",
+    "ipucu": "Zihnimizin açık ve kavrayışımızın yüksek olması durumu",
+    "tip": "tanim"
+   },
+   {
+    "kelime": "BİLGELİK",
+    "ipucu": "Bilgiyi doğru yer ve zamanda kullanabilme yeteneği",
+    "tip": "tanim"
+   },
+   {
+    "kelime": "GÜVENİLİRLİK",
+    "ipucu": "Güvenilir olma, sözünün eri olma durumu",
+    "tip": "tanim"
+   },
+   {
+    "kelime": "DAYANIŞMA",
+    "ipucu": "Birlik ve beraberlik içinde hareket etme gücü",
+    "tip": "tanim"
+   },
+   {
+    "kelime": "YİĞİTLİK",
+    "ipucu": "Zor işlerde gösterilen cesurca ve yılmaz tutum",
+    "tip": "tanim"
+   },
+   {
+    "kelime": "EMEK",
+    "ipucu": "Bir amaca ulaşmak için zihnen veya bedenen gösterilen çaba",
+    "tip": "tanim"
+   },
+   {
+    "kelime": "DOĞRULUK",
+    "ipucu": "Yalan söylemeyen, hile yapmayan kişinin özelliği",
+    "tip": "tanim"
+   },
+   {
+    "kelime": "VİCDAN",
+    "ipucu": "İç dünyamızdaki vicdanın sesini dinleyip doğruyu seçme",
+    "tip": "tanim"
+   }
+  ]
+ },
+ {
+  "id": "seviye8",
+  "no": 8,
+  "ad": "Zihinsel Beceriler ve Düşünce",
+  "alt": "Düşünme Becerileri",
+  "emoji": "🧠",
+  "renk": [
+   "#FFF0A8",
+   "#F2C94C"
+  ],
+  "kelimeler": [
+   {
+    "kelime": "DÜŞÜNMEK",
+    "ipucu": "Bir problemi çözmek için zihinde alternatif yollar üretme",
+    "tip": "tanim"
+   },
+   {
+    "kelime": "ANALİZ",
+    "ipucu": "Karmaşık bir konuyu parçalarına ayırıp inceleme işi",
+    "tip": "tanim"
+   },
+   {
+    "kelime": "SENTEZ",
+    "ipucu": "Farklı bilgileri bir araya getirerek yeni bir bütün oluşturma",
+    "tip": "tanim"
+   },
+   {
+    "kelime": "DEĞERLENDİRME",
+    "ipucu": "Bir olay hakkında doğru veya yanlış diye kanaat bildirme",
+    "tip": "tanim"
+   },
+   {
+    "kelime": "MANTIK",
+    "ipucu": "Mantık kurallarına uygun olarak akıl yürütme becerisi",
+    "tip": "tanim"
+   },
+   {
+    "kelime": "GEREKÇE",
+    "ipucu": "Bir fikrin nedenlerini ve sonuçlarını ortaya koyma",
+    "tip": "tanim"
+   },
+   {
+    "kelime": "HAYALGÜCÜ",
+    "ipucu": "Görünmeyen şeyleri zihinde canlandırabilme gücü",
+    "tip": "tanim"
+   },
+   {
+    "kelime": "ÇÖZÜM",
+    "ipucu": "Sorun karşısında hızlı ve etkili bir çare bulma yeteneği",
+    "tip": "tanim"
+   },
+   {
+    "kelime": "SORGULAMA",
+    "ipucu": "Olayların ardındaki gizli nedenleri merak edip kurcalama",
+    "tip": "tanim"
+   },
+   {
+    "kelime": "ELEŞTİRİ",
+    "ipucu": "Bir konuyu tüm yönleriyle tarafsızca inceleme tutumu",
+    "tip": "tanim"
+   },
+   {
+    "kelime": "BELLEK",
+    "ipucu": "Bilgileri zihinde saklayıp gerektiğinde hatırlama gücü",
+    "tip": "tanim"
+   },
+   {
+    "kelime": "KONSANTRASYON",
+    "ipucu": "Dikkatimizi tek bir noktada toplama başarısı",
+    "tip": "tanim"
+   },
+   {
+    "kelime": "ÖNGÖRÜ",
+    "ipucu": "Bir olay yaşanmadan önce tahmin yürütme becerisi",
+    "tip": "tanim"
+   },
+   {
+    "kelime": "KARŞILAŞTIRMA",
+    "ipucu": "İki farklı durum arasındaki benzerlik ve farkları bulma",
+    "tip": "tanim"
+   },
+   {
+    "kelime": "SOMUTLAŞTIRMA",
+    "ipucu": "Soyut düşünceleri somut örneklerle açıklama yeteneği",
+    "tip": "tanim"
+   },
+   {
+    "kelime": "SINIFLANDIRMA",
+    "ipucu": "Bilgileri sistemli şekilde kategorilere ayırma işlemi",
+    "tip": "tanim"
+   },
+   {
+    "kelime": "NEDENSONUÇ",
+    "ipucu": "Olaylar arasındaki sebep ve sonuç ilişkisini kurma",
+    "tip": "tanim"
+   },
+   {
+    "kelime": "İCAT",
+    "ipucu": "Zihinsel süreçleri kullanarak yeni bir buluş yapma",
+    "tip": "tanim"
+   },
+   {
+    "kelime": "DENEYİM",
+    "ipucu": "Zihnimizde önceden var olan bilgi ve tecrübeler birikimi",
+    "tip": "tanim"
+   },
+   {
+    "kelime": "PRATİK",
+    "ipucu": "Bir konuda uzmanlaşmak için yapılan sürekli alıştırma",
+    "tip": "tanim"
+   },
+   {
+    "kelime": "HESAPLAMA",
+    "ipucu": "Zor matematiksel işlemleri zihinden yapabilme yetisi",
+    "tip": "tanim"
+   },
+   {
+    "kelime": "ÖZETLEME",
+    "ipucu": "Bir metnin veya durumun ana fikrini ortaya çıkarma",
+    "tip": "tanim"
+   },
+   {
+    "kelime": "KARARVERME",
+    "ipucu": "Bir olay karşısında en doğru seçeneği belirleme eylemi",
+    "tip": "tanim"
+   },
+   {
+    "kelime": "UZLAŞMA",
+    "ipucu": "Fikir ayrılıklarında ortak bir noktada buluşma uzlaşısı",
+    "tip": "tanim"
+   },
+   {
+    "kelime": "ŞÜPHE",
+    "ipucu": "Şüphe duyarak doğrulardan emin olma isteği",
+    "tip": "tanim"
+   },
+   {
+    "kelime": "TANIM",
+    "ipucu": "Bir kavramın ne anlama geldiğini eksiksiz açıklama",
+    "tip": "tanim"
+   },
+   {
+    "kelime": "DELİL",
+    "ipucu": "Bir düşünceyi desteklemek için sunulan güçlü kanıt",
+    "tip": "tanim"
+   },
+   {
+    "kelime": "SORU",
+    "ipucu": "Doğru bilgiye ulaşmak için sorulan anlamlı soru",
+    "tip": "tanim"
+   }
+  ]
+ },
+ {
+  "id": "seviye9",
+  "no": 9,
+  "ad": "Atasözü ve Deyimler",
+  "alt": "Türkçe Zenginliği",
+  "emoji": "📜",
+  "renk": [
+   "#F0D9B5",
+   "#D1A15F"
+  ],
+  "kelimeler": [
+   {
+    "kelime": "BAŞINA",
+    "ipucu": "\"Gülme komşuna gelir başı...\" atasözündeki yakın komşuluk sözü",
+    "tip": "tanim"
+   },
+   {
+    "kelime": "YANAR",
+    "ipucu": "\"Yalancının mumu yatsıya kadar...\" atasözündeki eylem",
+    "tip": "tanim"
+   },
+   {
+    "kelime": "ZAMANI",
+    "ipucu": "\"Sakla samanı gelir...\" atasözündeki zaman kavramı",
+    "tip": "tanim"
+   },
+   {
+    "kelime": "EĞİLİR",
+    "ipucu": "\"Ağaç yaş iken...\" atasözündeki eğitilme biçimi",
+    "tip": "tanim"
+   },
+   {
+    "kelime": "IŞILDAR",
+    "ipucu": "\"İşleyen demir...\" atasözündeki parıldama durumu",
+    "tip": "tanim"
+   },
+   {
+    "kelime": "SESİ",
+    "ipucu": "\"Bir elin nesi var iki elin neyi var?\" atasözündeki ses",
+    "tip": "tanim"
+   },
+   {
+    "kelime": "YOĞURT",
+    "ipucu": "\"Sütten ağzı yanan neyi üfleyerek yer?\" atasözündeki gıda",
+    "tip": "tanim"
+   },
+   {
+    "kelime": "TAŞLANIR",
+    "ipucu": "\"Meyve veren ağaç...\" atasözündeki eylem",
+    "tip": "tanim"
+   },
+   {
+    "kelime": "DOĞAR",
+    "ipucu": "\"Birlikten kuvvet...\" atasözündeki eylem veya sonuç",
+    "tip": "tanim"
+   },
+   {
+    "kelime": "DOKTOR",
+    "ipucu": "\"Güneş girmeyen eve kim girer?\" atasözündeki meslek",
+    "tip": "tanim"
+   },
+   {
+    "kelime": "DELİĞİNDEN",
+    "ipucu": "\"Tatlı dil yılanı nereden çıkarır?\" atasözündeki yer",
+    "tip": "tanim"
+   },
+   {
+    "kelime": "UZAT",
+    "ipucu": "\"Ayağını yorganına göre...\" atasözündeki eylem",
+    "tip": "tanim"
+   },
+   {
+    "kelime": "TANINIR",
+    "ipucu": "\"Dost kara günde...\" atasözündeki durum",
+    "tip": "tanim"
+   },
+   {
+    "kelime": "KÜLÜNE",
+    "ipucu": "\"Komşu komşunun neyine muhtaçtır?\" atasözündeki kalıntı",
+    "tip": "tanim"
+   },
+   {
+    "kelime": "DÜZÜLÜR",
+    "ipucu": "\"Kervan yolda...\" atasözündeki eylem",
+    "tip": "tanim"
+   },
+   {
+    "kelime": "TATLIDIR",
+    "ipucu": "\"Sabır acıdır fakat meyvesi...\" atasözündeki lezzet",
+    "tip": "tanim"
+   },
+   {
+    "kelime": "ZARARLA",
+    "ipucu": "\"Öfke ile kalkan ne ile oturur?\" atasözündeki zarar kavramı",
+    "tip": "tanim"
+   },
+   {
+    "kelime": "ŞEYTAN",
+    "ipucu": "\"Acele işe ne karışır?\" atasözündeki varlık",
+    "tip": "tanim"
+   },
+   {
+    "kelime": "GÖNÜLDEN",
+    "ipucu": "\"Gözden ırak olan nereden de ırak olur?\" atasözündeki organ",
+    "tip": "tanim"
+   },
+   {
+    "kelime": "YARINA",
+    "ipucu": "\"Bugünün işini neye bırakma?\" atasözündeki gün",
+    "tip": "tanim"
+   },
+   {
+    "kelime": "KOMŞU",
+    "ipucu": "\"Ev alma ne al?\" atasözündeki yakın kişi",
+    "tip": "tanim"
+   },
+   {
+    "kelime": "SIVAMA",
+    "ipucu": "\"Dereyi görmeden paçaları...\" atasözündeki eylem",
+    "tip": "tanim"
+   },
+   {
+    "kelime": "ALTINDIR",
+    "ipucu": "\"Söz gümüşse sükût nedir?\" atasözündeki değerli maden",
+    "tip": "tanim"
+   },
+   {
+    "kelime": "ÜSTÜNDÜR",
+    "ipucu": "\"Akıl akıldan...\" atasözündeki üstünlük durumu",
+    "tip": "tanim"
+   },
+   {
+    "kelime": "OLMAZ",
+    "ipucu": "\"Zorla güzellik...\" atasözündeki olumsuzluk sözü",
+    "tip": "tanim"
+   },
+   {
+    "kelime": "EZİLİR",
+    "ipucu": "\"Yılanın başı küçükken...\" atasözündeki eylem",
+    "tip": "tanim"
+   }
+  ]
+ },
+ {
+  "id": "seviye10",
+  "no": 10,
+  "ad": "İleri Seviye",
+  "alt": "Derin Anlamlar",
+  "emoji": "🏆",
+  "renk": [
+   "#D6D6F5",
+   "#8A8AD6"
+  ],
+  "kelimeler": [
+   {
+    "kelime": "OBJEKTİFLİK",
+    "ipucu": "Bilimsel araştırmalarda olayları nesnel olarak inceleme ilkesi",
+    "tip": "tanim"
+   },
+   {
+    "kelime": "SÜBJEKTİFLİK",
+    "ipucu": "Kendine ait düşüncelere göre hareket eden taraflı tutum",
+    "tip": "tanim"
+   },
+   {
+    "kelime": "İNSANHAKLARI",
+    "ipucu": "İnsan haklarına saygılı olma ve kimseye ayrımcılık yapmama ilkesi",
+    "tip": "tanim"
+   },
+   {
+    "kelime": "EGEMENLİK",
+    "ipucu": "Bir milletin veya devletin kendi geleceğini belirleme gücü",
+    "tip": "tanim"
+   },
+   {
+    "kelime": "ANAYASA",
+    "ipucu": "Bir devletin temel kurallarını belirleyen en üst yasa",
+    "tip": "tanim"
+   },
+   {
+    "kelime": "DEMOKRASİ",
+    "ipucu": "Vatandaşların oy kullanarak yöneticilerini seçtiği yönetim biçimi",
+    "tip": "tanim"
+   },
+   {
+    "kelime": "EKOLOJİKDENGE",
+    "ipucu": "Doğadaki tüm canlıların birbiriyle uyum içinde yaşadığı denge",
+    "tip": "tanim"
+   },
+   {
+    "kelime": "ÇOĞULCULUK",
+    "ipucu": "Farklı kültürlerin bir arada hoşgörüyle yaşaması durumu",
+    "tip": "tanim"
+   },
+   {
+    "kelime": "KALİTE",
+    "ipucu": "Bir işi yaparken gösterilen üstün gayret ve nitelik",
+    "tip": "tanim"
+   },
+   {
+    "kelime": "KÜRESELLEŞME",
+    "ipucu": "Bilgi ve teknolojinin küresel çapta yayılması durumu",
+    "tip": "tanim"
+   },
+   {
+    "kelime": "ÖZERKLİK",
+    "ipucu": "İnsan iradesinin kendi kararlarını alma yetisi",
+    "tip": "tanim"
+   },
+   {
+    "kelime": "ELEŞTİRMENLİK",
+    "ipucu": "Bir sanat eserini veya olayı derinlemesine analiz etme uzmanlığı",
+    "tip": "tanim"
+   },
+   {
+    "kelime": "DESTAN",
+    "ipucu": "Bir milletin ortak tarihindeki unutulmaz kahramanlıklar",
+    "tip": "tanim"
+   },
+   {
+    "kelime": "FEDAKARLIK",
+    "ipucu": "Zor durumdaki canlılara karşılık beklemeden yapılan büyük yardım",
+    "tip": "tanim"
+   },
+   {
+    "kelime": "SOSYALADALET",
+    "ipucu": "Toplumda herkesin eşit haklara sahip olduğu sosyal yapı",
+    "tip": "tanim"
+   },
+   {
+    "kelime": "İNOVASYON",
+    "ipucu": "Yeni fikirlerin geliştirilip hayata geçirilmesi süreci",
+    "tip": "tanim"
+   },
+   {
+    "kelime": "MİLLİMİRAS",
+    "ipucu": "Bir ülkenin tarihi ve doğal zenginliklerinin korunması",
+    "tip": "tanim"
+   },
+   {
+    "kelime": "TEKNOLOJİ",
+    "ipucu": "Bilimsel bilginin teknolojiye dönüştürülüp kullanılması",
+    "tip": "tanim"
+   },
+   {
+    "kelime": "ÖZDİSİPLİN",
+    "ipucu": "Bireyin kendi davranışlarını kontrol edebilme disiplini",
+    "tip": "tanim"
+   },
+   {
+    "kelime": "TARAFSIZLIK",
+    "ipucu": "Gerçeğe ulaşmak için önyargılardan arınma tutumu",
+    "tip": "tanim"
+   },
+   {
+    "kelime": "DAYANIKLILIK",
+    "ipucu": "Zorluklar karşısında pes etmeyen içsel azim gücü",
+    "tip": "tanim"
+   },
+   {
+    "kelime": "GİRİŞİMCİ",
+    "ipucu": "Toplumun gelişmesine katkı sağlayan yenilikçi fikir sahibi kişi",
+    "tip": "tanim"
+   },
+   {
+    "kelime": "EVRENSELUYUM",
+    "ipucu": "Evrendeki tüm varlıkların uyum içinde hareket etmesi durumu",
+    "tip": "tanim"
+   }
+  ]
+ }
 ]
