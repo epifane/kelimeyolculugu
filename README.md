@@ -17,6 +17,14 @@ klasöründe basit bir sunucu açman yeterli, örn:
 npx serve .
 ```
 
+## Önemli: her güncellemede önbelleği güncelle
+`sw.js` dosyası çevrimdışı çalışma için `style.css`/`app.js`/vb. dosyaları önbelleğe alıyor.
+Bunlardan birini değiştirip GitHub'a her yüklediğinde, `sw.js` içindeki
+`const CACHE = "ky-vX";` satırındaki numarayı bir artır (ky-v2 → ky-v3 gibi).
+Bu satırı değiştirmezsen tarayıcı/telefon "güncelleme var" diye algılamaz ve
+eski dosyaları göstermeye devam eder. Değişikliği test ederken gizli
+sekme/pencerede açmak da önbelleği bypass eder ve en güncel hali gösterir.
+
 ## Notlar
 - `icons/icon.svg` geçici/basit bir ikon. Gerçek 192x192 ve 512x512 PNG ikonlar
   eklemek istersen `manifest.json`'daki `icons` listesine ekleyip bu SVG'yi
