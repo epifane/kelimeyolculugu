@@ -1,4 +1,4 @@
-const CACHE = "ky-v3";
+const CACHE = "ky-v4";
 const TEMEL_DOSYALAR = [
   "./",
   "index.html",
